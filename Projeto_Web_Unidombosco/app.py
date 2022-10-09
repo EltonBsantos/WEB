@@ -15,8 +15,6 @@ def home():
 def sec():
     return render_template('cadastro.html')
 
-
-
 @app.route('/cadastro', methods = ['GET', 'POST'])
 def cadastro():
     if request.method == 'POST':
@@ -38,7 +36,6 @@ def cadastro():
             insere_linha.close()
         registros.clear()
     return render_template('confirma.html')
-
 
 @app.route('/lista_cadastro', methods = ['GET', 'POST'])
 def lista_cadastro():

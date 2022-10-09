@@ -13,43 +13,41 @@
 <div class="cad01">
 {% block cadastro %}
     <form action="{{url_for('cadastro')}}", method="POST">
-
-
     <h2>Informações do Proprietário</h2>
         <label>Nome:</label><br>
         <input type="text" name="nome" required placeholder="Digite seu Nome"><br>
 
         <label>Telefone:</label><br>
-        <input type="tel" id="telefone" class="input-padrao"  placeholder="(xx) xxxxx-xxxx"><br>
+        <input type="tel" name="telefone" required class="input-padrao"  placeholder="(xx) xxxxx-xxxx"><br>
 
         <label>Email</label><br>
-        <input type="email" name="email"  placeholder="Digite seu Email"><br>
+        <input type="email" name="email"  required placeholder="Digite seu Email"><br>
 
         <label>Endereço</label><br>
-        <input type="text" name="endereco"  placeholder="Digite o Endereço"><br>
+        <input type="text" name="endereco"  required placeholder="Digite o Endereço"><br>
 
         <label>Cidade</label><br>
-        <input type="text" name="cidade"  placeholder="Digite o Cidade"><br>
+        <input type="text" name="cidade" required placeholder="Digite o Cidade"><br>
 
         <label>UF</label><br>
-        <input type="text" name="uf"  placeholder="Digite o UF"><br>
+        <input type="text" name="uf" required placeholder="Digite o UF"><br>
     
         <h2>Informações do Carro</h2>
 
         <label>Marca</label><br>
-        <input type="text" name="marca"  placeholder="Digite a Marca"><br>
+        <input type="text" name="marca" required placeholder="Digite a Marca"><br>
 
         <label>Modelo</label><br>
-        <input type="text" name="modelo"  placeholder="Digite a Modelo"><br>
+        <input type="text" name="modelo" required placeholder="Digite a Modelo"><br>
 
         <label>Placa</label><br>
-        <input type="text" name="placa"  placeholder="Digite a Placa"><br>
+        <input type="text" name="placa" required placeholder="Digite a Placa"><br>
 
         <label>Ano de fabricação</label><br>
-        <input type="text" name="ano"  placeholder="Digite a Ano"><br>
+        <input type="text" name="ano" required placeholder="Digite a Ano"><br>
 
         <label for="Foto">Foto</label><br>
-        <input type="file" name="foto"  placeholder="Foto"><br><br>
+        <input type="file" name="foto" required placeholder="Foto"><br><br>
 
     <input type="submit" value="Enviar Cadastro">
     <input type="reset" value="Limpar Campos">
