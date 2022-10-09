@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Ubuntu:wght@300;400;500&display=swap');
+*{ 
+ background-color: gray;
+}
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+
+ }
+ body * { 
+    box-sizing: border-box;
+ }
+ h1 { 
+    text-align: center;
+    color: #fff;
+    font-size: 3.5em;
+    background-color: rgb(66, 68, 66);
+ }
+ .cad00 { 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+   
+ }
+ .cad01  { 
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+ }
+ h2{
+    color: #fff; 
+
+ }
+ input::placeholder{ 
+    color:#d0cccc;
+ }
